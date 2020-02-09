@@ -399,6 +399,64 @@
   grid-template-rows: auto auto auto;
 }
 
+.host-heading {
+  color: #fff;
+}
+
+.price {
+  margin-top: 44px;
+  margin-bottom: 44px;
+  color: #f800a5;
+  font-size: 60px;
+}
+
+.month {
+  color: #fff;
+  font-size: 24px;
+}
+
+.host-wrapper {
+  margin-right: 0px;
+  margin-left: 0px;
+  padding-right: 14px;
+  padding-left: 14px;
+  border: 1px solid #fff;
+}
+
+.hosting-list {
+  padding-left: 31px;
+}
+
+.hosting-list-item {
+  margin-top: 14px;
+  margin-bottom: 14px;
+}
+
+.heading-small {
+  color: #fff;
+  font-size: 18px;
+}
+
+.body {
+  color: #fff;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.feature-columns {
+  margin-top: 42px;
+  margin-bottom: 42px;
+}
+
+.small-list {
+  color: #fff;
+}
+
+.prices {
+  margin-top: 0px;
+  margin-bottom: 82px;
+}
+
 @media (max-width: 767px) {
   .herosection {
     min-height: 70vh;
