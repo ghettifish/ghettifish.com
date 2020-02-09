@@ -63,6 +63,7 @@ gulp.task("html", ["javascript", "css", "fonts", "images"], function() {
     )
 	.pipe(replace("js/webflow.js", "/js/webflow-min.js"))
 	.pipe(replace('w-form', ''))
+	.pipe(replace('<form id="email-form"', '<form id="email-form" data-netlify="true" data-netlify-recaptcha="true"'))
 	.pipe(replace('2017',  d.getFullYear()))
     .pipe(htmlmin({ collapseWhitespace: true }))
     .pipe(gulp.dest("dist"));

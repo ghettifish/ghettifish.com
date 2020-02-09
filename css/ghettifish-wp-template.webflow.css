@@ -1,8 +1,17 @@
+.w-layout-grid {
+  display: -ms-grid;
+  display: grid;
+  grid-auto-columns: 1fr;
+  -ms-grid-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  -ms-grid-rows: auto auto;
+  grid-template-rows: auto auto;
+  grid-row-gap: 16px;
+  grid-column-gap: 16px;
+}
+
 .herosection {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
+  display: block;
   min-height: 80vh;
   padding: 0px;
   -webkit-box-orient: vertical;
@@ -19,8 +28,8 @@
   align-items: center;
   border: 1px none #000;
   background-color: #c08686;
-  background-image: -webkit-gradient(linear, left bottom, left top, from(#100620), to(hsla(0, 0%, 100%, 0.04))), url('../images/james-eades-RVX2STx44UI-unsplash-2.jpg');
-  background-image: linear-gradient(0deg, #100620, hsla(0, 0%, 100%, 0.04)), url('../images/james-eades-RVX2STx44UI-unsplash-2.jpg');
+  background-image: -webkit-gradient(linear, left bottom, left top, from(#100620), color-stop(64%, hsla(0, 0%, 100%, 0.04)), to(#100620)), url('../images/james-eades-RVX2STx44UI-unsplash-2.jpg');
+  background-image: linear-gradient(0deg, #100620, hsla(0, 0%, 100%, 0.04) 64%, #100620), url('../images/james-eades-RVX2STx44UI-unsplash-2.jpg');
   background-position: 0px 0px, 50% 50%;
   background-size: auto, cover;
 }
@@ -121,6 +130,7 @@
 }
 
 .heading-2 {
+  margin-top: 96px;
   color: #fff;
 }
 
@@ -291,10 +301,102 @@
 }
 
 .text-block-4 {
+  display: inline-block;
+  padding: 20px 20px 20px 0px;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif;
   color: #fff;
   font-size: 50px;
   font-weight: 400;
+}
+
+.about-body {
+  margin-bottom: 11px;
+  background-color: #100620;
+}
+
+.hero-text-wrapper {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 80vh;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.navigation {
+  background-color: transparent;
+}
+
+.nav-link {
+  color: #fff;
+  font-size: 20px;
+  text-transform: none;
+}
+
+.nav-link.w--current {
+  color: #f800a5;
+}
+
+.nav-link-2 {
+  color: #fff;
+}
+
+.nav-link-3 {
+  color: #fff;
+}
+
+.container-5 {
+  display: block;
+  height: 80px;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.website-screenshot {
+  display: block;
+  margin: 26px 0px;
+  -webkit-transition: all 200ms cubic-bezier(.68, -.55, .265, 1.55);
+  transition: all 200ms cubic-bezier(.68, -.55, .265, 1.55);
+}
+
+.website-screenshot:hover {
+  box-shadow: 0 0 20px 5px #f800a5;
+}
+
+.heading-purple {
+  margin-bottom: 0px;
+  color: #f800a5;
+  font-size: 24px;
+  font-weight: 400;
+}
+
+.grid {
+  -ms-grid-columns: 1fr 1.75fr;
+  grid-template-columns: 1fr 1.75fr;
+  -ms-grid-rows: auto auto auto;
+  grid-template-rows: auto auto auto;
 }
 
 @media (max-width: 767px) {
@@ -361,4 +463,40 @@
   .text-block-4 {
     font-size: 30px;
   }
+  .menu-button {
+    color: #fff;
+  }
+}
+
+#w-node-4e8423e94f6c-a526559c {
+  -ms-grid-row: span 1;
+  grid-row-start: span 1;
+  -ms-grid-row-span: 1;
+  grid-row-end: span 1;
+  -ms-grid-column: span 1;
+  grid-column-start: span 1;
+  -ms-grid-column-span: 1;
+  grid-column-end: span 1;
+}
+
+#w-node-d57a1c70afe2-a526559c {
+  -ms-grid-column: 2;
+  grid-column-start: 2;
+  -ms-grid-column-span: 1;
+  grid-column-end: 3;
+  -ms-grid-row: 1;
+  grid-row-start: 1;
+  -ms-grid-row-span: 1;
+  grid-row-end: 2;
+}
+
+#w-node-ef605a81b508-a526559c {
+  -ms-grid-row: span 1;
+  grid-row-start: span 1;
+  -ms-grid-row-span: 1;
+  grid-row-end: span 1;
+  -ms-grid-column: span 1;
+  grid-column-start: span 1;
+  -ms-grid-column-span: 1;
+  grid-column-end: span 1;
 }
