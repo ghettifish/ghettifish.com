@@ -19,7 +19,7 @@ gulp.task("fonts", function() {
 
 gulp.task("css", function() {
   return gulp
-    .src(["css/normalize.css", "css/webflow.css", "css/highcountrylandservices-com.webflow.css"])
+    .src(["css/normalize.css", "css/webflow.css", "css/ghettifish-wp-template.webflow.css"])
     .pipe(concat("style.min.css"))
     .pipe(cleanCSS())
     .pipe(gulp.dest("dist/css"));
@@ -54,7 +54,7 @@ gulp.task("html", ["javascript", "css", "fonts", "images"], function() {
         ""
       )
     )
-    .pipe(replace("css/highcountrylandservices-com.webflow.css", "css/style.min.css"))
+    .pipe(replace("css/ghettifish-wp-template.webflow.css", "css/style.min.css"))
     .pipe(
       replace(
         '<script src="js/modernizr.js',
